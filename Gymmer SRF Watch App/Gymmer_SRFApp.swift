@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct Gymmer_SRF_Watch_AppApp: App {
-    var body: some Scene {
+    @StateObject var workoutManager = WorkoutManagerService()
+    
+    @SceneBuilder var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                ContentView()
+            }
+            .onAppear() {
+                workoutManager.RequestAuthorization()
+            }
+            .environmentObject(workoutManager)
         }
     }
 }

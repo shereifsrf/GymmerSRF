@@ -7,7 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6BDF62012927E2B50084604D /* Gymmer SRF Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6BDF62002927E2B50084604D /* Gymmer SRF Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6BA15FE12928AB5300EEF08A /* WorkoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA15FE02928AB5300EEF08A /* WorkoutService.swift */; };
+		6BA15FE42928ABE800EEF08A /* GymService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA15FE32928ABE800EEF08A /* GymService.swift */; };
+		6BA15FE72928AC2900EEF08A /* ButtonListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA15FE62928AC2900EEF08A /* ButtonListModel.swift */; };
+		6BA15FE92928ACA100EEF08A /* ButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA15FE82928ACA100EEF08A /* ButtonModel.swift */; };
+		6BA15FEB2928AD3100EEF08A /* ButtonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA15FEA2928AD3100EEF08A /* ButtonService.swift */; };
+		6BA15FF02928AE5500EEF08A /* GymmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA15FEF2928AE5500EEF08A /* GymmerView.swift */; };
+		6BA15FF42928AF2300EEF08A /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA15FF32928AF2300EEF08A /* TimerView.swift */; };
+		6BA15FF72928AFA200EEF08A /* MetricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA15FF62928AFA200EEF08A /* MetricsView.swift */; };
+		6BA15FF92928AFC700EEF08A /* ElapsedTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA15FF82928AFC700EEF08A /* ElapsedTimeView.swift */; };
+		6BA15FFB2929247500EEF08A /* CountDownTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA15FFA2929247500EEF08A /* CountDownTimeView.swift */; };
+		6BA15FFE292924DC00EEF08A /* ButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA15FFD292924DC00EEF08A /* ButtonsView.swift */; };
+		6BA160002929D2D500EEF08A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA15FFF2929D2D500EEF08A /* Constants.swift */; };
+		6BA160022929D34900EEF08A /* ButtonValuesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA160012929D34900EEF08A /* ButtonValuesModel.swift */; };
+		6BA160042929D4CA00EEF08A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA160032929D4CA00EEF08A /* ButtonView.swift */; };
+		6BA160062929D52900EEF08A /* ButtonText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA160052929D52900EEF08A /* ButtonText.swift */; };
+		6BA1600C2929DD9A00EEF08A /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA1600B2929DD9A00EEF08A /* CornerRadius.swift */; };
+		6BA1600E2929F45A00EEF08A /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA1600D2929F45A00EEF08A /* PreviewProvider.swift */; };
+		6BA16011292A461500EEF08A /* ConfigureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA16010292A461500EEF08A /* ConfigureView.swift */; };
+		6BDF62012927E2B50084604D /* Gymmer SRF.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6BDF62002927E2B50084604D /* Gymmer SRF.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6BDF62062927E2B50084604D /* Gymmer_SRFApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDF62052927E2B50084604D /* Gymmer_SRFApp.swift */; };
 		6BDF62082927E2B50084604D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDF62072927E2B50084604D /* ContentView.swift */; };
 		6BDF620A2927E2B80084604D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BDF62092927E2B80084604D /* Assets.xcassets */; };
@@ -48,7 +66,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				6BDF62012927E2B50084604D /* Gymmer SRF Watch App.app in Embed Watch Content */,
+				6BDF62012927E2B50084604D /* Gymmer SRF.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,8 +74,29 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6BA15FE02928AB5300EEF08A /* WorkoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutService.swift; sourceTree = "<group>"; };
+		6BA15FE32928ABE800EEF08A /* GymService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymService.swift; sourceTree = "<group>"; };
+		6BA15FE62928AC2900EEF08A /* ButtonListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonListModel.swift; sourceTree = "<group>"; };
+		6BA15FE82928ACA100EEF08A /* ButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModel.swift; sourceTree = "<group>"; };
+		6BA15FEA2928AD3100EEF08A /* ButtonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonService.swift; sourceTree = "<group>"; };
+		6BA15FEF2928AE5500EEF08A /* GymmerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymmerView.swift; sourceTree = "<group>"; };
+		6BA15FF32928AF2300EEF08A /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		6BA15FF62928AFA200EEF08A /* MetricsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsView.swift; sourceTree = "<group>"; };
+		6BA15FF82928AFC700EEF08A /* ElapsedTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElapsedTimeView.swift; sourceTree = "<group>"; };
+		6BA15FFA2929247500EEF08A /* CountDownTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimeView.swift; sourceTree = "<group>"; };
+		6BA15FFD292924DC00EEF08A /* ButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsView.swift; sourceTree = "<group>"; };
+		6BA15FFF2929D2D500EEF08A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6BA160012929D34900EEF08A /* ButtonValuesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonValuesModel.swift; sourceTree = "<group>"; };
+		6BA160032929D4CA00EEF08A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		6BA160052929D52900EEF08A /* ButtonText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonText.swift; sourceTree = "<group>"; };
+		6BA160082929D69700EEF08A /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS9.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		6BA1600B2929DD9A00EEF08A /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
+		6BA1600D2929F45A00EEF08A /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		6BA16010292A461500EEF08A /* ConfigureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureView.swift; sourceTree = "<group>"; };
+		6BA16012292A4A6F00EEF08A /* Gymmer SRF Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Gymmer SRF Watch App.entitlements"; sourceTree = "<group>"; };
+		6BA16014292A549800EEF08A /* Gymmer-SRF-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Gymmer-SRF-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		6BDF61FA2927E2B50084604D /* Gymmer SRF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gymmer SRF.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BDF62002927E2B50084604D /* Gymmer SRF Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gymmer SRF Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BDF62002927E2B50084604D /* Gymmer SRF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gymmer SRF.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BDF62052927E2B50084604D /* Gymmer_SRFApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymmer_SRFApp.swift; sourceTree = "<group>"; };
 		6BDF62072927E2B50084604D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6BDF62092927E2B80084604D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,6 +133,99 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BA15FDF2928AB2000EEF08A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6BA15FE02928AB5300EEF08A /* WorkoutService.swift */,
+				6BA15FE32928ABE800EEF08A /* GymService.swift */,
+				6BA15FEA2928AD3100EEF08A /* ButtonService.swift */,
+				6BA15FFF2929D2D500EEF08A /* Constants.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6BA15FE52928AC0D00EEF08A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6BA15FE62928AC2900EEF08A /* ButtonListModel.swift */,
+				6BA15FE82928ACA100EEF08A /* ButtonModel.swift */,
+				6BA160012929D34900EEF08A /* ButtonValuesModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6BA15FEC2928AD6C00EEF08A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6BA1600F292A460200EEF08A /* Configure */,
+				6BA15FF12928AEC400EEF08A /* Gymmer */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6BA15FF12928AEC400EEF08A /* Gymmer */ = {
+			isa = PBXGroup;
+			children = (
+				6BA15FEF2928AE5500EEF08A /* GymmerView.swift */,
+				6BA15FF52928AF5800EEF08A /* Timer */,
+				6BA15FF62928AFA200EEF08A /* MetricsView.swift */,
+			);
+			path = Gymmer;
+			sourceTree = "<group>";
+		};
+		6BA15FF22928AEDF00EEF08A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6BA15FFC292924BA00EEF08A /* Button */,
+				6BA15FF82928AFC700EEF08A /* ElapsedTimeView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		6BA15FF52928AF5800EEF08A /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				6BA15FF32928AF2300EEF08A /* TimerView.swift */,
+				6BA15FFA2929247500EEF08A /* CountDownTimeView.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		6BA15FFC292924BA00EEF08A /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				6BA15FFD292924DC00EEF08A /* ButtonsView.swift */,
+				6BA160032929D4CA00EEF08A /* ButtonView.swift */,
+				6BA160052929D52900EEF08A /* ButtonText.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		6BA160072929D69700EEF08A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BA160082929D69700EEF08A /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6BA1600A2929DD5A00EEF08A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6BA1600B2929DD9A00EEF08A /* CornerRadius.swift */,
+				6BA1600D2929F45A00EEF08A /* PreviewProvider.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6BA1600F292A460200EEF08A /* Configure */ = {
+			isa = PBXGroup;
+			children = (
+				6BA16010292A461500EEF08A /* ConfigureView.swift */,
+			);
+			path = Configure;
+			sourceTree = "<group>";
+		};
 		6BDF61F32927E2B50084604D = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +233,7 @@
 				6BDF62152927E2B80084604D /* Gymmer SRF Watch AppTests */,
 				6BDF621F2927E2B80084604D /* Gymmer SRF Watch AppUITests */,
 				6BDF61FB2927E2B50084604D /* Products */,
+				6BA160072929D69700EEF08A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,7 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				6BDF61FA2927E2B50084604D /* Gymmer SRF.app */,
-				6BDF62002927E2B50084604D /* Gymmer SRF Watch App.app */,
+				6BDF62002927E2B50084604D /* Gymmer SRF.app */,
 				6BDF62122927E2B80084604D /* Gymmer SRF Watch AppTests.xctest */,
 				6BDF621C2927E2B80084604D /* Gymmer SRF Watch AppUITests.xctest */,
 			);
@@ -118,10 +251,17 @@
 		6BDF62042927E2B50084604D /* Gymmer SRF Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				6BDF62052927E2B50084604D /* Gymmer_SRFApp.swift */,
-				6BDF62072927E2B50084604D /* ContentView.swift */,
-				6BDF62092927E2B80084604D /* Assets.xcassets */,
+				6BA15FDF2928AB2000EEF08A /* Services */,
+				6BA15FE52928AC0D00EEF08A /* Models */,
+				6BA15FEC2928AD6C00EEF08A /* Views */,
+				6BA15FF22928AEDF00EEF08A /* Components */,
+				6BA1600A2929DD5A00EEF08A /* Extensions */,
 				6BDF620B2927E2B80084604D /* Preview Content */,
+				6BDF62072927E2B50084604D /* ContentView.swift */,
+				6BDF62052927E2B50084604D /* Gymmer_SRFApp.swift */,
+				6BDF62092927E2B80084604D /* Assets.xcassets */,
+				6BA16014292A549800EEF08A /* Gymmer-SRF-Watch-App-Info.plist */,
+				6BA16012292A4A6F00EEF08A /* Gymmer SRF Watch App.entitlements */,
 			);
 			path = "Gymmer SRF Watch App";
 			sourceTree = "<group>";
@@ -185,7 +325,7 @@
 			);
 			name = "Gymmer SRF Watch App";
 			productName = "Gymmer SRF Watch App";
-			productReference = 6BDF62002927E2B50084604D /* Gymmer SRF Watch App.app */;
+			productReference = 6BDF62002927E2B50084604D /* Gymmer SRF.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6BDF62112927E2B80084604D /* Gymmer SRF Watch AppTests */ = {
@@ -309,8 +449,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BA15FF42928AF2300EEF08A /* TimerView.swift in Sources */,
 				6BDF62082927E2B50084604D /* ContentView.swift in Sources */,
+				6BA160042929D4CA00EEF08A /* ButtonView.swift in Sources */,
+				6BA160022929D34900EEF08A /* ButtonValuesModel.swift in Sources */,
+				6BA15FE72928AC2900EEF08A /* ButtonListModel.swift in Sources */,
+				6BA160062929D52900EEF08A /* ButtonText.swift in Sources */,
+				6BA15FEB2928AD3100EEF08A /* ButtonService.swift in Sources */,
+				6BA16011292A461500EEF08A /* ConfigureView.swift in Sources */,
+				6BA15FE42928ABE800EEF08A /* GymService.swift in Sources */,
+				6BA1600C2929DD9A00EEF08A /* CornerRadius.swift in Sources */,
+				6BA15FF92928AFC700EEF08A /* ElapsedTimeView.swift in Sources */,
 				6BDF62062927E2B50084604D /* Gymmer_SRFApp.swift in Sources */,
+				6BA15FF72928AFA200EEF08A /* MetricsView.swift in Sources */,
+				6BA15FE12928AB5300EEF08A /* WorkoutService.swift in Sources */,
+				6BA1600E2929F45A00EEF08A /* PreviewProvider.swift in Sources */,
+				6BA15FFE292924DC00EEF08A /* ButtonsView.swift in Sources */,
+				6BA15FFB2929247500EEF08A /* CountDownTimeView.swift in Sources */,
+				6BA160002929D2D500EEF08A /* Constants.swift in Sources */,
+				6BA15FE92928ACA100EEF08A /* ButtonModel.swift in Sources */,
+				6BA15FF02928AE5500EEF08A /* GymmerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,28 +624,32 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Gymmer SRF Watch App/Gymmer SRF Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2.0.1;
 				DEVELOPMENT_ASSET_PATHS = "\"Gymmer SRF Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = PTS7976U28;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gymmer-SRF-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Gymmer SRF";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Your workout related data will be used to display your saved workouts in Gymmer SRF.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Workouts tracked by MyWorkouts on Apple Watch will be saved to HealthKit.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "srf.Gymmer-SRF.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Gymmer SRF";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+				WATCHOS_DEPLOYMENT_TARGET = 8.1;
 			};
 			name = Debug;
 		};
@@ -496,29 +658,33 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Gymmer SRF Watch App/Gymmer SRF Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2.0.1;
 				DEVELOPMENT_ASSET_PATHS = "\"Gymmer SRF Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = PTS7976U28;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gymmer-SRF-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Gymmer SRF";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Your workout related data will be used to display your saved workouts in Gymmer SRF.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Workouts tracked by MyWorkouts on Apple Watch will be saved to HealthKit.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "srf.Gymmer-SRF.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Gymmer SRF";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+				WATCHOS_DEPLOYMENT_TARGET = 8.1;
 			};
 			name = Release;
 		};
@@ -527,10 +693,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2.0.1;
 				DEVELOPMENT_TEAM = PTS7976U28;
 				INFOPLIST_KEY_CFBundleDisplayName = "Gymmer SRF";
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "srf.Gymmer-SRF";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
@@ -543,10 +709,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2.0.1;
 				DEVELOPMENT_TEAM = PTS7976U28;
 				INFOPLIST_KEY_CFBundleDisplayName = "Gymmer SRF";
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "srf.Gymmer-SRF";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
