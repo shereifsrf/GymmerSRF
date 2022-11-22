@@ -157,8 +157,8 @@
 		6BA15FEC2928AD6C00EEF08A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6BA1600F292A460200EEF08A /* Configure */,
 				6BA15FF12928AEC400EEF08A /* Gymmer */,
+				6BA1600F292A460200EEF08A /* Configure */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -626,7 +626,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Gymmer SRF Watch App/Gymmer SRF Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.0.1;
+				CURRENT_PROJECT_VERSION = 2.0.2;
 				DEVELOPMENT_ASSET_PATHS = "\"Gymmer SRF Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = PTS7976U28;
 				ENABLE_PREVIEWS = YES;
@@ -660,7 +660,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "Gymmer SRF Watch App/Gymmer SRF Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2.0.1;
+				CURRENT_PROJECT_VERSION = 2.0.2;
 				DEVELOPMENT_ASSET_PATHS = "\"Gymmer SRF Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = PTS7976U28;
 				ENABLE_PREVIEWS = YES;
