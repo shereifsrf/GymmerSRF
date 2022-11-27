@@ -77,6 +77,10 @@ class Gym: ObservableObject {
         guard duration > 0 else { return }
         
         self.duration = TimeInterval(duration)
+        
+        // add local notification
+        LocalNotificationService.shared.ScheduleNotification(interval: self.duration)
+        
         play()
         mainConfig.ShowIcon()
     }
@@ -114,6 +118,7 @@ class Gym: ObservableObject {
             self.Status = .ended
         }
         self.duration = TimeInterval(mainConfig.mainButton.value)
+        LocalNotificationService.shared.ClearSchedule()
         mainConfig.HideIcon()
     }
     

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B0D8BB8292D0AF2003A30E4 /* LocalNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0D8BB7292D0AF2003A30E4 /* LocalNotificationService.swift */; };
 		6BA15FE12928AB5300EEF08A /* WorkoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA15FE02928AB5300EEF08A /* WorkoutService.swift */; };
 		6BA15FE42928ABE800EEF08A /* GymService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA15FE32928ABE800EEF08A /* GymService.swift */; };
 		6BA15FE72928AC2900EEF08A /* ButtonListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA15FE62928AC2900EEF08A /* ButtonListModel.swift */; };
@@ -33,6 +34,7 @@
 		6BDF62172927E2B80084604D /* Gymmer_SRF_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDF62162927E2B80084604D /* Gymmer_SRF_Watch_AppTests.swift */; };
 		6BDF62212927E2B80084604D /* Gymmer_SRF_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDF62202927E2B80084604D /* Gymmer_SRF_Watch_AppUITests.swift */; };
 		6BDF62232927E2B80084604D /* Gymmer_SRF_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BDF62222927E2B80084604D /* Gymmer_SRF_Watch_AppUITestsLaunchTests.swift */; };
+		6BEF4F7A293329C00088F7A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEF4F79293329C00088F7A7 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6B0D8BB7292D0AF2003A30E4 /* LocalNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationService.swift; sourceTree = "<group>"; };
 		6BA15FE02928AB5300EEF08A /* WorkoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutService.swift; sourceTree = "<group>"; };
 		6BA15FE32928ABE800EEF08A /* GymService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymService.swift; sourceTree = "<group>"; };
 		6BA15FE62928AC2900EEF08A /* ButtonListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonListModel.swift; sourceTree = "<group>"; };
@@ -106,6 +109,7 @@
 		6BDF621C2927E2B80084604D /* Gymmer SRF Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gymmer SRF Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BDF62202927E2B80084604D /* Gymmer_SRF_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymmer_SRF_Watch_AppUITests.swift; sourceTree = "<group>"; };
 		6BDF62222927E2B80084604D /* Gymmer_SRF_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymmer_SRF_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6BEF4F79293329C00088F7A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				6BA15FE02928AB5300EEF08A /* WorkoutService.swift */,
+				6B0D8BB7292D0AF2003A30E4 /* LocalNotificationService.swift */,
 				6BA15FE32928ABE800EEF08A /* GymService.swift */,
 				6BA15FEA2928AD3100EEF08A /* ButtonService.swift */,
 				6BA15FFF2929D2D500EEF08A /* Constants.swift */,
@@ -214,6 +219,7 @@
 			children = (
 				6BA1600B2929DD9A00EEF08A /* CornerRadius.swift */,
 				6BA1600D2929F45A00EEF08A /* PreviewProvider.swift */,
+				6BEF4F79293329C00088F7A7 /* AppDelegate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -449,7 +455,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BEF4F7A293329C00088F7A7 /* AppDelegate.swift in Sources */,
 				6BA15FF42928AF2300EEF08A /* TimerView.swift in Sources */,
+				6B0D8BB8292D0AF2003A30E4 /* LocalNotificationService.swift in Sources */,
 				6BDF62082927E2B50084604D /* ContentView.swift in Sources */,
 				6BA160042929D4CA00EEF08A /* ButtonView.swift in Sources */,
 				6BA160022929D34900EEF08A /* ButtonValuesModel.swift in Sources */,

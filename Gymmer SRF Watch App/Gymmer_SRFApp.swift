@@ -10,6 +10,7 @@ import SwiftUI
 @main
 struct Gymmer_SRF_Watch_AppApp: App {
     @StateObject var workoutManager = WorkoutManagerService()
+    let appDelegate = AppDelgate()
     
     @SceneBuilder var body: some Scene {
         WindowGroup {
@@ -18,6 +19,7 @@ struct Gymmer_SRF_Watch_AppApp: App {
             }
             .onAppear() {
                 workoutManager.RequestAuthorization()
+                appDelegate.Register()
             }
             .environmentObject(workoutManager)
         }
