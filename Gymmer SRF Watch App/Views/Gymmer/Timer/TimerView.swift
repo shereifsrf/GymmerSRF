@@ -31,16 +31,22 @@ struct TimerView: View {
 }
 
 extension TimerView {
-    func mainButtonAction(){
-        gym.Execute(type: .main)
+    func mainButtonAction() {
+        Task {
+            await gym.Execute(type: .main)
+        }
     }
     
-    func leftButtonAction(){
-        gym.Execute(type: .left)
+    func leftButtonAction() {
+        Task {
+            await gym.Execute(type: .left)
+        }
     }
     
-    func rightButtonAction(){
-        gym.Execute(type: .right)
+    func rightButtonAction() {
+        Task {
+            await gym.Execute(type: .right)
+        }
     }
 }
 

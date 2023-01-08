@@ -20,6 +20,5 @@ class AppDelgate: NSObject, UNUserNotificationCenterDelegate {
     
     func Register() {
         UNUserNotificationCenter.current().delegate = self
-        LocalNotificationService.shared.RequestPermission()
     }
 }

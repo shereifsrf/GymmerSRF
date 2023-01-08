@@ -12,4 +12,6 @@ class Constants {
     private init(){}
     
     let ButtonValue = ButtonValuesModel(main: 60, left: 45, right: 90)
+    let secondNotifyAfter = TimeInterval(5)
+    let noOfAlarmsAfter = 5
 }

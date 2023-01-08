@@ -36,10 +36,10 @@ class Gym: ObservableObject {
     
     
     // MARK: Public functions
-    func Execute(type: ButtonTypeEnum) {
+    func Execute(type: ButtonTypeEnum) async {
         switch self.Status {
         case .ended, .stopped:
-            start(type)
+            await start(type)
         case .started:
             changeFromRunning(type)
         case .paused:
@@ -72,17 +72,17 @@ class Gym: ObservableObject {
     
     
     // MARK: private functions
-    func start(_ type: ButtonTypeEnum) {
+    func start(_ type: ButtonTypeEnum) async {
         let duration = mainConfig.GetDuration(buttonType: type)
         guard duration > 0 else { return }
         
+        // add local notification
+        await LocalNotificationService.shared.ScheduleNotification(interval: self.duration)
+        
         self.duration = TimeInterval(duration)
         
-        // add local notification
-        LocalNotificationService.shared.ScheduleNotification(interval: self.duration)
-        
-        play()
         mainConfig.ShowIcon()
+        play()
     }
     
     func changeFromRunning(_ type: ButtonTypeEnum) {
@@ -94,9 +94,9 @@ class Gym: ObservableObject {
         
         // pause if remaining is positive
         // set the remaining duration
-        self.Status = .paused
         self.duration = self.endsAt?.timeIntervalSince(.now) ?? 0
         mainConfig.MainPlayIcon()
+        self.Status = .paused
     }
     
     func changeFromPause(_ type: ButtonTypeEnum) {
@@ -111,6 +111,7 @@ class Gym: ObservableObject {
     }
     
     func stop(_ type: ButtonTypeEnum) {
+        mainConfig.HideIcon()
         switch type {
         case .left, .main:
             self.Status = .stopped
@@ -119,14 +120,10 @@ class Gym: ObservableObject {
         }
         self.duration = TimeInterval(mainConfig.mainButton.value)
         LocalNotificationService.shared.ClearSchedule()
-        mainConfig.HideIcon()
     }
     
     func play() {
         guard self.Status != .started else { return }
-        
-        self.Status = .started
-        mainConfig.MainPauseIcon()
         
         // starting
         if self.endsAt == nil {
@@ -136,5 +133,10 @@ class Gym: ObservableObject {
         else {
             self.endsAt = Date().addingTimeInterval(self.duration)
         }
+        
+        // start only after defining endsAt value
+        // otherwise there will be concurrency issues
+        mainConfig.MainPauseIcon()
+        self.Status = .started
     }
 }

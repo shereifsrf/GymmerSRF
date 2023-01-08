@@ -14,28 +14,28 @@ class LocalNotificationService {
     private init(){}
     
     private var scheduled = false
-    private let secondNotifyAfter = TimeInterval(3)
     
-    func RequestPermission() {
+    func requestPermission() async throws -> Bool {
         let options: UNAuthorizationOptions = [.alert, .sound, .badge]
         let center = UNUserNotificationCenter.current()
         
-        center.requestAuthorization(options: options) { success, error in
-            if let error = error {
-                print("Error", error)
-            } else {
-                // for success
-            }
-        }
+        return try await center.requestAuthorization(options: options)
     }
     
-    func ClearSchedule(g: String = "") {
+    func ClearSchedule() {
         UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
         UNUserNotificationCenter.current().removeAllDeliveredNotifications()
     }
     
     // schedule the notification
-    func ScheduleNotification(interval: TimeInterval) {
+    func ScheduleNotification(interval: TimeInterval) async {
+        do {
+            let granted = try await requestPermission()
+            print("granted: ", granted)
+        } catch {
+            print(error)
+        }
+        
         let content = UNMutableNotificationContent()
         content.title = "Times Up"
         content.subtitle = "Click here to stop"
@@ -43,21 +43,29 @@ class LocalNotificationService {
         content.badge = 1
         
         // time
-        let trigger1 = UNTimeIntervalNotificationTrigger(timeInterval: interval, repeats: false)
-        let trigger2 = UNTimeIntervalNotificationTrigger(timeInterval: interval + secondNotifyAfter, repeats: false)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: interval, repeats: false)
         
         //calender
-        let request1 = UNNotificationRequest(
-            identifier: UUID().uuidString,
-            content: content,
-            trigger: trigger1)
-        let request2 = UNNotificationRequest(
-            identifier: UUID().uuidString,
-            content: content,
-            trigger: trigger2)
-        
         ClearSchedule()
-        UNUserNotificationCenter.current().add(request1)
-        UNUserNotificationCenter.current().add(request2)
+        scheduleAlarm(content: content, trigger: trigger)
+        scheduleAlarmsAfter(content: content, interval: interval)
+    }
+    
+    func scheduleAlarm(content: UNMutableNotificationContent, trigger: UNTimeIntervalNotificationTrigger) {
+        let request = UNNotificationRequest(
+            identifier: UUID().uuidString,
+            content: content,
+            trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request)
+    }
+    
+    func scheduleAlarmsAfter(content: UNMutableNotificationContent, interval: TimeInterval) {
+        for i in 1...Constants.shared.noOfAlarmsAfter {
+            let extraSeconds = TimeInterval(i) * Constants.shared.secondNotifyAfter
+            
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: interval + extraSeconds, repeats: false)
+            scheduleAlarm(content: content, trigger: trigger)
+        }
     }
 }
